@@ -160,7 +160,6 @@ h6 {
           flex: 1 0 100%;
   position: relative;
   height: 100vh;
-  overflow: hidden;
   z-index: 2;
 }
 
@@ -765,7 +764,7 @@ body._touch .header-menu__list > li._active .header-menu__sub-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 100%;
+  height: auto;
 }
 
 @media (max-width: 1025px) {
@@ -784,6 +783,7 @@ body._touch .header-menu__list > li._active .header-menu__sub-list {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 33.333%;
           flex: 0 1 33.333%;
+  overflow: hidden;
 }
 
 .models__column_big {
@@ -1233,6 +1233,7 @@ body._touch .header-menu__list > li._active .header-menu__sub-list {
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
   background-color: #f3f2f2;
+  overflow: hidden;
 }
 
 .parts__title {
