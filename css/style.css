@@ -160,12 +160,19 @@ h6 {
           flex: 1 0 100%;
   position: relative;
   height: 100vh;
+  overflow: hidden;
   z-index: 2;
 }
 
 @media (max-width: 1025px) {
   .screen {
     height: auto;
+  }
+}
+
+@media (max-width: 426px) {
+  .screen {
+    overflow: visible;
   }
 }
 
@@ -764,7 +771,7 @@ body._touch .header-menu__list > li._active .header-menu__sub-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: auto;
+  height: 100%;
 }
 
 @media (max-width: 1025px) {
@@ -776,6 +783,7 @@ body._touch .header-menu__list > li._active .header-menu__sub-list {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    height: auto;
   }
 }
 
@@ -1472,6 +1480,10 @@ body._touch .header-menu__list > li._active .header-menu__sub-list {
   .contacts__title_c span {
     background-color: transparent;
   }
+}
+
+.contacts__form {
+  overflow: hidden;
 }
 
 .contacts__social {
