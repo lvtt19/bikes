@@ -130,7 +130,7 @@ h6 {
 
 @media (max-width: 426px) {
   .container__body {
-    padding: 0 2vh;
+    padding: 0 1vh;
   }
 }
 
@@ -156,15 +156,15 @@ h6 {
 
 .screen {
   -webkit-box-flex: 1;
-      -ms-flex: 1 0 100%;
-          flex: 1 0 100%;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
   position: relative;
   height: 100vh;
   overflow: hidden;
   z-index: 2;
 }
 
-@media (max-width: 1025px) {
+@media (max-width: 769px) {
   .screen {
     height: auto;
   }
@@ -194,6 +194,13 @@ h6 {
   .title {
     margin: 0 0 3.2vh 0;
     font-size: 4vh;
+  }
+}
+
+@media (max-width: 426px) {
+  .title {
+    margin: 0 0 2.5vh 0;
+    font-size: 3vh;
   }
 }
 
@@ -263,7 +270,7 @@ h6 {
 
 @media (max-width: 426px) {
   .text-models {
-    font-size: 2.3vh;
+    font-size: 1.9vh;
   }
 }
 
@@ -289,6 +296,9 @@ h6 {
 
 .header__screen {
   padding: 5.2vh 0;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 100%;
+          flex: 1 0 100%;
 }
 
 .screen__header {
@@ -362,7 +372,7 @@ h6 {
   display: none;
 }
 
-@media (max-width: 426px) {
+@media (max-width: 1025px) {
   .header-menu__menu-burger {
     display: block;
     position: relative;
@@ -372,7 +382,7 @@ h6 {
   }
 }
 
-@media (max-width: 426px) {
+@media (max-width: 1025px) {
   .header-menu__menu-burger span {
     content: "";
     position: absolute;
@@ -381,13 +391,15 @@ h6 {
     width: 75%;
     height: 0.3vh;
     border-radius: 0.3vh;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
     background-color: #a08d6b;
     -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
   }
 }
 
-@media (max-width: 426px) {
+@media (max-width: 1025px) {
   .header-menu__menu-burger::before, .header-menu__menu-burger::after {
     content: "";
     position: absolute;
@@ -401,19 +413,19 @@ h6 {
   }
 }
 
-@media (max-width: 426px) {
+@media (max-width: 1025px) {
   .header-menu__menu-burger::before {
     top: 0;
   }
 }
 
-@media (max-width: 426px) {
+@media (max-width: 1025px) {
   .header-menu__menu-burger::after {
     bottom: 0;
   }
 }
 
-@media (max-width: 426px) {
+@media (max-width: 1025px) {
   .header-menu__menu-burger.active::before {
     -webkit-transform: rotate(45deg);
             transform: rotate(45deg);
@@ -422,7 +434,7 @@ h6 {
   }
 }
 
-@media (max-width: 426px) {
+@media (max-width: 1025px) {
   .header-menu__menu-burger.active::after {
     -webkit-transform: rotate(-45deg);
             transform: rotate(-45deg);
@@ -431,7 +443,7 @@ h6 {
   }
 }
 
-@media (max-width: 426px) {
+@media (max-width: 1025px) {
   .header-menu__menu-burger.active span {
     -webkit-transform: scale(0);
             transform: scale(0);
@@ -444,7 +456,7 @@ h6 {
   transition: 0.8s ease .8s;
 }
 
-@media (max-width: 426px) {
+@media (max-width: 1025px) {
   .header-menu__navigation {
     position: absolute;
     top: 0;
@@ -469,13 +481,13 @@ h6 {
   z-index: 5;
 }
 
-@media (max-width: 426px) {
+@media (max-width: 1025px) {
   .header-menu__list a {
     font-size: 4vh;
   }
 }
 
-@media (max-width: 426px) {
+@media (max-width: 1025px) {
   .header-menu__list {
     position: fixed;
     top: 0;
@@ -514,23 +526,19 @@ h6 {
   padding: 0 0 3.1vh 0;
 }
 
-@media (max-width: 426px) {
+@media (max-width: 1025px) {
   .header-menu__list > li {
     padding: 0 0 5.1vh 0;
   }
 }
 
-.header-menu__list > li:last-child {
-  padding-bottom: 0;
-}
-
-@media (max-width: 426px) {
+@media (max-width: 1025px) {
   .header-menu__list > li._active .header-menu__sub-list {
     display: block;
   }
 }
 
-@media (max-width: 426px) {
+@media (max-width: 1025px) {
   .header-menu__list.active {
     left: 0;
   }
@@ -541,13 +549,13 @@ h6 {
   }
 }
 
-@media (max-width: 426px) {
+@media (max-width: 1025px) {
   .header-menu__link {
     font-size: 36px;
   }
 }
 
-@media (max-width: 426px) {
+@media (max-width: 1025px) {
   .header-menu__link_models-mob {
     text-decoration: underline;
   }
@@ -581,13 +589,13 @@ h6 {
   background-color: #a08d6b;
 }
 
-@media (max-width: 426px) {
+@media (max-width: 1025px) {
   .header-menu__sub-list::before {
     display: none;
   }
 }
 
-@media (max-width: 426px) {
+@media (max-width: 1025px) {
   .header-menu__sub-list {
     position: relative;
     padding: 0;
@@ -604,7 +612,7 @@ h6 {
   padding: 0 0 3.1vh 3vh;
 }
 
-@media (max-width: 426px) {
+@media (max-width: 1025px) {
   .header-menu__sub-list > li {
     padding: 0 0 5.1vh 0;
   }
@@ -746,7 +754,7 @@ body._touch .header-menu__list > li._active .header-menu__sub-list {
 
 @media (max-width: 426px) {
   .history__text {
-    font-size: 2.3vh;
+    font-size: 1.9vh;
   }
 }
 
@@ -845,6 +853,8 @@ body._touch .header-menu__list > li._active .header-menu__sub-list {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: 50%;
+     object-position: 50%;
 }
 
 .models__upper-pic_left {
@@ -913,10 +923,16 @@ body._touch .header-menu__list > li._active .header-menu__sub-list {
 }
 
 .models__content {
-  padding: 5.2vh;
+  padding: 3.2vh;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
+}
+
+@media (max-width: 426px) {
+  .models__content {
+    padding: 2.5vh;
+  }
 }
 
 .models__title_animation-right {
@@ -1020,6 +1036,12 @@ body._touch .header-menu__list > li._active .header-menu__sub-list {
   transition: 0.8s ease;
 }
 
+@media (max-width: 1025px) {
+  .item__logo-bmw {
+    display: none;
+  }
+}
+
 .models__screen_revers .models__column_big {
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
@@ -1069,6 +1091,12 @@ body._touch .header-menu__list > li._active .header-menu__sub-list {
   transition: 0.8s ease;
 }
 
+@media (max-width: 1025px) {
+  .item__logo-honda {
+    display: none;
+  }
+}
+
 .ducati__block {
   height: 100%;
 }
@@ -1104,6 +1132,12 @@ body._touch .header-menu__list > li._active .header-menu__sub-list {
   opacity: 1;
   -webkit-transition: 0.8s ease;
   transition: 0.8s ease;
+}
+
+@media (max-width: 1025px) {
+  .item__logo-ducati {
+    display: none;
+  }
 }
 
 .models__screen_revers .models__column_big {
@@ -1155,6 +1189,12 @@ body._touch .header-menu__list > li._active .header-menu__sub-list {
   transition: 0.8s ease;
 }
 
+@media (max-width: 1025px) {
+  .item__logo-triumph {
+    display: none;
+  }
+}
+
 .harley-davidson__block {
   height: 100%;
 }
@@ -1192,6 +1232,12 @@ body._touch .header-menu__list > li._active .header-menu__sub-list {
   transition: 0.8s ease;
 }
 
+@media (max-width: 1025px) {
+  .item__logo-harley-davidson {
+    display: none;
+  }
+}
+
 .mv-agusta__block {
   height: 100%;
 }
@@ -1227,6 +1273,12 @@ body._touch .header-menu__list > li._active .header-menu__sub-list {
   opacity: 1;
   -webkit-transition: 0.8s ease;
   transition: 0.8s ease;
+}
+
+@media (max-width: 1025px) {
+  .item__logo-mv-agusta {
+    display: none;
+  }
 }
 
 .parts__screen {
@@ -1269,14 +1321,6 @@ body._touch .header-menu__list > li._active .header-menu__sub-list {
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
   padding: 5.2vh 0;
-}
-
-@media (max-width: 1441px) {
-  .parts__content {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
-  }
 }
 
 .parts__text {
@@ -1435,6 +1479,12 @@ body._touch .header-menu__list > li._active .header-menu__sub-list {
   transition: 0.8s ease;
 }
 
+@media (max-width: 1025px) {
+  .item__logo-parts {
+    display: none;
+  }
+}
+
 .item__logo-text {
   font-size: 2.3vh;
   font-weight: 500;
@@ -1502,6 +1552,7 @@ body._touch .header-menu__list > li._active .header-menu__sub-list {
 @media (max-width: 426px) {
   .contacts__social {
     width: 100%;
+    height: 100%;
   }
 }
 
@@ -1511,7 +1562,7 @@ body._touch .header-menu__list > li._active .header-menu__sub-list {
 
 @media (max-width: 426px) {
   .contacts__social li:not(:last-child) {
-    padding: 0 18.3vh 0 0;
+    padding: 0 10.3vh 0 0;
   }
 }
 
@@ -1592,7 +1643,8 @@ body._touch .header-menu__list > li._active .header-menu__sub-list {
 
 @media (max-width: 1025px) {
   .form {
-    width: 50%;
+    width: 70%;
+    margin: 0 auto;
   }
 }
 
@@ -1600,7 +1652,6 @@ body._touch .header-menu__list > li._active .header-menu__sub-list {
   .form {
     width: 100%;
     padding: 0;
-    margin: 0 auto;
   }
 }
 
@@ -1652,8 +1703,8 @@ body._touch .header-menu__list > li._active .header-menu__sub-list {
 
 @media (max-width: 426px) {
   .form__name, .form__email {
-    height: 8.3vh;
-    font-size: 2.9vh;
+    height: 6.3vh;
+    font-size: 2.5vh;
   }
 }
 
@@ -1714,7 +1765,7 @@ body._touch .header-menu__list > li._active .header-menu__sub-list {
 
 @media (max-width: 426px) {
   .form__textarea {
-    font-size: 2.9vh;
+    font-size: 2.5vh;
   }
 }
 
@@ -1753,7 +1804,7 @@ body._touch .header-menu__list > li._active .header-menu__sub-list {
 @media (max-width: 426px) {
   .form__button {
     width: 100%;
-    height: 8.3vh;
+    height: 6.3vh;
     font-size: 3vh;
   }
 }
