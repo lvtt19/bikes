@@ -95,7 +95,7 @@ h6 {
   display: none;
 }
 
-@media (max-width: 426px) {
+@media (max-width: 1025px) {
   body.lock {
     overflow: hidden;
   }
